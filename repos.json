@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "bangkk",
       "repo": "https://github.com/Motorola-SM6375-Devs/android_kernel_motorola_sm6375",
-      "branch": "android-14",
+      "branch": "fourteen",
       "device": "bangkk"
     },
     "withKernelSU": false,
