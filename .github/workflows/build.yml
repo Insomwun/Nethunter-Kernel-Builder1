@@ -50,7 +50,11 @@ jobs:
       - name: "⭐ Install prerequisites"
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential bc curl git zip ftp gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev lftp zstd wget libfl-dev python2 python3 libarchive-tools
+          sudo apt-get install -y \
+            build-essential bc curl git zip ftp \
+            gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi \
+            libssl-dev lftp zstd wget libfl-dev \
+            python3 python3-distutils python-is-python3 libarchive-tools
 
       - name: "🌟 Clone kernel source => (${{ env.kernelRepo }})"
         working-directory: ./${{ env.kernelDir }}
@@ -78,8 +82,8 @@ jobs:
         id: generate-args
         working-directory: ./${{ env.kernelDir }}
         env:
-          params: "${{ toJSON(matrix.repos.params) }}"
-          extraParams: "${{ toJSON(matrix.repos.extraParams) }}"
+          params: ${{ toJSON(matrix.repos.params) }}
+          extraParams: ${{ toJSON(matrix.repos.extraParams) }}
         run: |
           echo "PATH Variable: $PATH"
           ARCH=$(echo "$params" | jq -r ".ARCH")
