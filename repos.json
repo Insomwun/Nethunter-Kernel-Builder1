@@ -1,10 +1,10 @@
 [
   {
     "kernelSource": {
-      "name": "nethunter-example",
-      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm660",
-      "branch": "lineage-20.0",
-      "device": "sdm660"
+      "name": "moto-g84-5g",
+      "repo": "https://github.com/ghazzor/kernel_moto_695_5.4",
+      "branch": "fourteen",
+      "device": "bangkk"
     },
     "withKernelSU": false,
     "toolchains": [
