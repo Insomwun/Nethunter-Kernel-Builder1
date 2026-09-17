@@ -1,13 +1,28 @@
 [
   {
-    "kernel_url": "https://github.com/ghazzor/kernel_moto_695_5.4",
-    "kernel_branch": "fourteen",
-    "config": "vendor/holi-bangkk_defconfig",
-    "arch": "arm64",
-    "compiler": "clang",
-    "clang_version": "r450784d",
-    "gcc_version": "4.9",
-    "kernelsu": false
+    "kernelSource": {
+      "name": "kernel_moto_695_5.4",
+      "device": "holi-bangkk",
+      "repo": "https://github.com/ghazzor/kernel_moto_695_5.4",
+      "branch": "fourteen"
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "name": "proton-clang",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master"
+      }
+    ],
+    "params": {
+      "ARCH": "arm64",
+      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "CROSS_COMPILE_COMPAT": "",
+      "CROSS_COMPILE_ARM32": "",
+      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "AR": "llvm-ar",
+      "CC": "clang"
+    },
+    "extraParams": {}
   }
-]  }
 ]
