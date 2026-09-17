@@ -3,8 +3,8 @@
     "kernelSource": {
       "name": "bangkk",
       "repo": "https://github.com/Motorola-SM6375-Devs/android_kernel_motorola_sm6375",
-      "branch": "android-14",
-      "device": "bangkk"
+      "branch": "fourteen",
+      "device": "defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -22,6 +22,10 @@
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "",
       "CC": "clang"
+    },
+    "extraParams": {
+      "DTC_EXT": "=tools/dtc",
+      "LLVM": "1"
     }
   }
 ]
