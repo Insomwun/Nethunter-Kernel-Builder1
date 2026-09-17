@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "moto-g84-5g",
-      "repo": "https://github.com/ghazzor/kernel_moto_695_5.4",
-      "branch": "fourteen",
+      "name": "bangkk",
+      "repo": "https://github.com/Motorola-SM6375-Devs/android_kernel_motorola_sm6375",
+      "branch": "android-14",
       "device": "bangkk"
     },
     "withKernelSU": false,
